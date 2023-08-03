@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jorge Palma | Frontend Developer</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -14,7 +15,7 @@
 </head>
 <body>
     <!-- Navigation bar -->
-    <div class="container">
+    <div class="container-fluid">
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
           <div class="col-md-3 mb-2 mb-md-0">
             <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
@@ -37,7 +38,7 @@
 
     <!-- Main Content-->
     <main>
-        <div class="container py-5">
+        <div class="container-fluid py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 p-5">
               <div class="col-4 col-sm-6 col-lg-4">
                 <img src="images/avatar.jpg" class="d-block mx-lg-auto img-fluid rounded-circle shadow" alt="Avatar Jorge Palma" width="600" loading="lazy">
@@ -63,57 +64,17 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 px-5">
-            <div class="col">
-              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
-                  <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                      <small>Earth</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                      <small>3d</small>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-      
-            <div class="col">
-              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-                  <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                      <small>Pakistan</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                      <small>4d</small>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-      
+        <div id="projects" class="container-fluid text-center p-4 mt-5">
+          <h1 class="underline" style="font-weight: 600;">Projects</h1>
+          <h6>Click on the cards to see more</h6>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 px-5">
             <div class="col">
               <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
                 <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                   <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
                   <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                    </li>
+                    <li class="me-auto"></li>
                     <li class="d-flex align-items-center me-3">
                       <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
                       <small>California</small>
@@ -126,46 +87,122 @@
                 </div>
               </div>
             </div>
-        </section>
-
-        <section id="testimonials">
-            <div class="row">
-                <div class="column">
-                    <div class="card">Testimonials 1</div>
-                </div>
-                <div class="column">
-                    <div class="card">Testimonials 2</div>
-                </div>
-                <div class="column">
-                    <div class="card">Testimonials 3</div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <div class="container">
-        <footer class="row">
+      
             <div class="col">
-            <a href="/" class="d-flex align-items-center mb-3 text-decoration-none">
-                JP.
-            </a>
-            <p class="text-body-secondary">© 2023</p>
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto"></li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                      <small>California</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                      <small>5d</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        
+      
             <div class="col">
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="mailto:jorge_palma@icloud.com" class="nav-link p-0 text-body-secondary">jorge_palma@icloud.com</a></li>
-                <li class="nav-item mb-2"><a href="https://www.linkedin.com/in/jorge-palma/" target="https://www.linkedin.com/in/jorge-palma/" class="nav-link p-0 text-body-secondary">LinkedIn</a></li>
-            </ul>
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto"></li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                      <small>California</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                      <small>5d</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        
-            <div class="col mb-3">
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">@jorgepalma</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">@jorgepalma95</a></li>
-            </ul>
-            </div>
-        </footer>
         </div>
+
+        <!-- Testimonials Section -->
+        <div id="projects" class="container-fluid text-center p-4 mt-5">
+          <h1 class="underline" style="font-weight: 600;">Testimonials</h1>
+          <h6>Some people I've worked with</h6>
+        </div>
+        <div class="row row-cols-1 row-cols-lg-4 align-items-stretch g-4 py-5 px-5">
+            <div class="col">
+              <div class="card h-100 rounded-4 border border-dark border-3">
+                <div class="d-flex flex-column h-100 p-5 pb-3">
+                  <h6 class="pt-3 mt-3 mb-4 lh-1">Short title, long jacket</h6>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li>
+                      <small class="fst-italic">Author</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 rounded-4 border border-dark border-3">
+                <div class="d-flex flex-column h-100 p-5 pb-3">
+                  <h6 class="pt-3 mt-3 mb-4 lh-1">Short title, long jacket</h6>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li>
+                      <small class="fst-italic">Author</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col">
+              <div class="card h-100 rounded-4 border border-dark border-3">
+                <div class="d-flex flex-column h-100 p-5 pb-3">
+                  <h6 class="pt-3 mt-3 mb-4 lh-1">Short title, long jacket</h6>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li>
+                      <small class="fst-italic">Author</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col">
+              <div class="card h-100 rounded-4 border border-dark border-3">
+                <div class="d-flex flex-column h-100 p-5 pb-3">
+                  <h6 class="pt-3 mt-3 mb-4 lh-1">Short title, long jacket</h6>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li>
+                      <small class="fst-italic">Author</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+
+
+
+
+    </main>
+    <footer class="container-fluid bg-dark d-flex flex-column flex-sm-row justify-content-between p-5 text-white">
+      <div>
+        <span id="logo-header">JP.</span>
+        <p>© 2023</p>
+      </div>
+      <ul class="list-unstyled d-flex ">
+        <li class="ms-5"><a class="link-body-emphasis" href="mailto:jorge_palma@icloud.com"><i class="bi bi-envelope-fill" style="font-size: 2rem; color: #f3efe7;"></i></a></li>
+        <li class="ms-5"><a class="link-body-emphasis" target="_blank" href="https://www.linkedin.com/in/jorge-palma/"><i class="bi bi-linkedin" style="font-size: 2rem; color: #f3efe7;"></i></a></li>
+        <li class="ms-5"><a class="link-body-emphasis" target="_blank" href="https://www.instagram.com/jorgepalma/"><i class="bi bi-instagram" style="font-size: 2rem; color: #f3efe7;"></i></a></li>
+        <li class="ms-5"><a class="link-body-emphasis" target="_blank" href="https://github.com/jorgepalma95/"><i class="bi bi-github" style="font-size: 2rem; color: #f3efe7;"></i></a></li>
+      </ul>
+    </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
